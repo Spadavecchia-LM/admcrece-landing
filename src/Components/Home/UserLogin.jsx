@@ -1,20 +1,23 @@
-import { Stack, Card, Button, ButtonGroup} from '@mui/material'
+import {Stack} from '@mui/material'
 import React from 'react'
+import {fuente, italic, card} from '../../styles/About.module.css'
 
 
 const UserLogin = () => {
   return (
-    <Stack sx={{width:"30%", backgroundColor:"#fafafa", minHeight:"40%", borderRadius:"16px", padding:"16px"}} justifyContent="center" >
-        <Stack  alignItems="center" sx={{height:"100%"}} gap={10} >
-            <Stack alignItems="center">
-            <h1>Usuarios</h1>
-            <p>Inicie sesion o registrese para recibir todas las novedades de su eficio.</p>
-            </Stack>
-            <Stack direction="row" justifyContent="space-around" sx={{width:"100%"}}>
-                <Button size='small' variant='contained'>Iniciar Sesión</Button>
-                <Button size='small' variant='outlined'>Registrarse</Button>
-            </Stack>
-        </Stack>
+    <Stack className={card}>
+    <h1 className={fuente}>Contacto</h1>
+    <Stack sx={{flexDirection: "row", alignContent:"left" }}>
+      <div>
+        <p>Crece Buenos Aires</p>
+        <p>Iberá 5383 CABA</p>
+        <p>1431 Buenos Aires, Argentina</p>
+      </div>
+      <div>
+        <p>Teléfonos: 15-3070-1191 / 1189</p>
+        <p>Email: admcrece@gmail.com</p>
+        </div>
+    </Stack>  
     </Stack>
 
   )
