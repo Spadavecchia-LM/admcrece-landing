@@ -5,7 +5,7 @@ import { hero } from "../../styles/Hero.module.css"
 
 const Home = () => {
   return (
-    <Stack direction="column" flexWrap="wrap" justifyContent="space-around" alignItems="center" sx={{ height: "93vh", width: "100vw"}} className={hero}>
+    <Stack direction="column" flexWrap="wrap" justifyContent="space-around" alignItems="center" sx={{height: "90vh", width: "100vw"}} className={hero}>
       <About />
     </Stack>
   )

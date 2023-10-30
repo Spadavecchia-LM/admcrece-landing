@@ -6,17 +6,17 @@ import LoginIcon from '@mui/icons-material/Login';
 
 const MuiNavbar = () => {
   return (
-    <AppBar position='static' className={navfondo}>
+    <AppBar className={navfondo}>
         <Toolbar>
         <Icon size='large' edge='start' color='inherit' aria-label='logo' sx={{paddingRight: "10px"}}>
         <ApartmentIcon />
         </Icon>
-        <Typography variant="h6" component='div' sx={{flexGrow: 1}}>
+        <Typography fontSize="medium" variant="h6"component='span' sx={{flexGrow: 1}}>
             Crece Buenos Aires
         </Typography>
         <Stack direction='row'>
         
-        <Button color='inherit' startIcon={<LoginIcon/>}>Ingresar</Button>
+        <Button color='inherit' fontSize="medium" startIcon={<LoginIcon/>}>Ingresar</Button>
         </Stack>
         </Toolbar>
     </AppBar>

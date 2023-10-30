@@ -6,15 +6,19 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 
 const Contact = () => {
   return (
-    <Stack sx={{width:"100%", minHeight:"3%", borderRadius:"16px", padding:"16px"}} justifyContent="space-around" flexDirection="row">
+    <Stack sx={{textAlign:"center"}} gap={3} justifyContent="space-around" alignItems="center" flexDirection="row" flexWrap="wrap">
     
-    <p>Crece Buenos Aires</p>
-    <p> Iberá 5383 CABA 1431 Buenos Aires, Argentina</p>
-    <p>Teléfonos: 15-3070-1191 / 1189 </p>
-    <p>Email: admcrece@gmail.com</p>
+    <span>Direccion: Iberá 5383 CABA 1431 Buenos Aires, Argentina</span>
+    <span>Teléfonos: 15-3070-1191 / 1189 </span>
+    <span>Email: admcrece@gmail.com</span>
+    <span>
+      Redes Sociales: 
     <IconButton color='inherit'>
       <FacebookIcon/>
       </IconButton>
+
+    </span>
+
     </Stack>
   )
 }
